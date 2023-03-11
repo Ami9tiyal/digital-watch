@@ -1,0 +1,35 @@
+.Topbar{
+    width: 100%;
+    background-color: #282c34;
+    padding: 20px 16px 12px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  
+  .Topbar > img{
+    width: 100px;
+  }
+
+
+  @media(max-width:968px) {
+    .Topbar{
+      padding: 16px 14px 10px;
+    }
+
+    .Topbar > img {
+      width: 80px;
+    }
+  }
+
+  @media(max-width:600px) {
+    .Topbar{
+      padding: 14px 12px 4px;
+    }
+
+    .Topbar > img {
+      width: 50px;
+    }
+  }

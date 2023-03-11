@@ -1,0 +1,79 @@
+.ProductPreview {
+  width: 100%;
+  box-sizing: content-box;
+  position: relative;
+  z-index: 1;
+}
+
+.ProductPreview > img {
+  width: 100%;
+}
+
+.TimeSection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  font-weight:600;
+}
+
+.HearBeatSection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.HearBeatSection > i {
+  color: red;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.HearBeatSection > p {
+  margin-top: 16px;
+}
+
+
+@media (max-width:968px) {
+  
+  .TimeSection {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .HearBeatSection {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+@media (max-width:600px) {
+  
+  .TimeSection {
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  .HearBeatSection {
+    font-size: 10px;
+    font-weight: 200;
+  }
+}
